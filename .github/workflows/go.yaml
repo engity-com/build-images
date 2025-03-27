@@ -23,13 +23,14 @@ jobs:
     runs-on: ubuntu-latest
     name: Build ${{ matrix.version }}
     env:
-      LATEST: 1.23
+      LATEST: 1.24
 
     strategy:
       matrix:
         version:
           - 1.22
           - 1.23
+          - 1.24
 
     permissions:
       contents: read
