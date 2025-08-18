@@ -6,8 +6,6 @@ RUN    dpkg --add-architecture i386 \
     && dpkg --add-architecture arm64 \
     && dpkg --add-architecture armel \
     && dpkg --add-architecture armhf \
-    && dpkg --add-architecture mipsel \
-    && dpkg --add-architecture mips64el \
     && dpkg --add-architecture ppc64el \
     && dpkg --add-architecture s390x \
     && apt-get update \
@@ -37,16 +35,6 @@ RUN    dpkg --add-architecture i386 \
         g++-arm-linux-gnueabihf \
         libpam0g-dev:armhf \
         libcrypt-dev:armhf \
-        \
-        gcc-mipsel-linux-gnu \
-        g++-mipsel-linux-gnu \
-        libpam0g-dev:mipsel \
-        libcrypt-dev:mipsel \
-        \
-        gcc-mips64el-linux-gnuabi64 \
-        g++-mips64el-linux-gnuabi64 \
-        libpam0g-dev:mips64el \
-        libcrypt-dev:mips64el \
         \
         gcc-powerpc64le-linux-gnu \
         g++-powerpc64le-linux-gnu \
