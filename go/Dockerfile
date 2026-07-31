@@ -4,10 +4,8 @@ FROM golang:${GO_VERSION}
 
 RUN    dpkg --add-architecture i386 \
     && dpkg --add-architecture arm64 \
-    && dpkg --add-architecture armel \
     && dpkg --add-architecture armhf \
     && dpkg --add-architecture ppc64el \
-    && dpkg --add-architecture s390x \
     && apt-get update \
     && apt-get upgrade -y \
     && apt-get install -y \
@@ -26,11 +24,6 @@ RUN    dpkg --add-architecture i386 \
         libpam0g-dev:arm64 \
         libcrypt-dev:arm64 \
         \
-        gcc-arm-linux-gnueabi \
-        g++-arm-linux-gnueabi \
-        libpam0g-dev:armel \
-        libcrypt-dev:armel \
-        \
         gcc-arm-linux-gnueabihf \
         g++-arm-linux-gnueabihf \
         libpam0g-dev:armhf \
@@ -40,11 +33,6 @@ RUN    dpkg --add-architecture i386 \
         g++-powerpc64le-linux-gnu \
         libpam0g-dev:ppc64el \
         libcrypt-dev:ppc64el \
-        \
-        gcc-s390x-linux-gnu \
-        g++-s390x-linux-gnu \
-        libpam0g-dev:s390x \
-        libcrypt-dev:s390x \
     && apt-get clean \
     && rm -rf \
         /tmp/* \
