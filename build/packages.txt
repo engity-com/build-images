@@ -1,0 +1,45 @@
+# GitHub Actions and downloads
+bash
+ca-certificates
+curl
+wget
+git
+openssh-client
+procps
+jq
+
+# Archives and Mise prerequisites
+tar
+gzip
+bzip2
+xz-utils
+unzip
+zstd
+file
+patch
+
+# Native builds
+build-essential
+pkg-config
+libpam0g-dev
+libcrypt-dev
+
+# Cross-compilers
+gcc-i686-linux-gnu
+g++-i686-linux-gnu
+gcc-aarch64-linux-gnu
+g++-aarch64-linux-gnu
+gcc-arm-linux-gnueabihf
+g++-arm-linux-gnueabihf
+gcc-powerpc64le-linux-gnu
+g++-powerpc64le-linux-gnu
+
+# Foreign-architecture development libraries
+libpam0g-dev:i386
+libcrypt-dev:i386
+libpam0g-dev:arm64
+libcrypt-dev:arm64
+libpam0g-dev:armhf
+libcrypt-dev:armhf
+libpam0g-dev:ppc64el
+libcrypt-dev:ppc64el
