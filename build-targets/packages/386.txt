@@ -1,0 +1,4 @@
+gcc-i686-linux-gnu
+g++-i686-linux-gnu
+libpam0g-dev:i386
+libcrypt-dev:i386
