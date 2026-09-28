@@ -1,0 +1,3 @@
+build-essential
+libpam0g-dev
+libcrypt-dev

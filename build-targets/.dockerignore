@@ -1,0 +1,6 @@
+*
+!Dockerfile
+!dependencies.sh
+!dependency-state.txt
+!packages/
+!packages/*.txt

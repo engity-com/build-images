@@ -1,0 +1,4 @@
+gcc-arm-linux-gnueabihf
+g++-arm-linux-gnueabihf
+libpam0g-dev:armhf
+libcrypt-dev:armhf

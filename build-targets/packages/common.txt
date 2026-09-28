@@ -1,0 +1,19 @@
+# GitHub Actions, downloads, archives and build basics
+bash
+ca-certificates
+curl
+wget
+git
+openssh-client
+procps
+jq
+tar
+gzip
+bzip2
+xz-utils
+unzip
+zstd
+file
+patch
+make
+pkg-config

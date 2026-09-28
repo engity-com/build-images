@@ -1,0 +1,4 @@
+gcc-aarch64-linux-gnu
+g++-aarch64-linux-gnu
+libpam0g-dev:arm64
+libcrypt-dev:arm64
